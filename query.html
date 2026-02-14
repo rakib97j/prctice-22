@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Selector</title>
+
+    <style>
+        #old p span{
+            font-weight: 900;
+            font-size: xx-large;
+            color: darkblue;
+        }
+    </style>
+
+
+  </head>
+  <body>
+    <h1>Query selector all</h1>
+    <section id="old">
+      <h1>test 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur
+        <span>adipisicing elit. Voluptatibus doloremque</span> ipsa quibusdam
+        magni provident beatae molestias sint enim non repellat eaque reiciendis
+        amet <span>expedita commodi iusto consectetur illo, corporis</span> recusandae.
+      </p>
+
+      <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil
+        tempore est corrupti saepe sapiente quos a
+        <span
+          >dolore neque facere placeat laborum cupiditate tempora molestias
+          corporis inventore enim</span
+        >
+        , similique facilis!
+      </h1>
+    </section>
+
+    <script>
+      const query = document.querySelectorAll("#old p span");
+    //   console.log(query);
+    for(let show of query){
+        console.log(show.innerText);
+        
+    }
+      
+      
+      
+    </script>
+  </body>
+</html>
