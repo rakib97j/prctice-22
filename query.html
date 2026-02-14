@@ -6,14 +6,15 @@
     <title>Query Selector</title>
 
     <style>
-        #old p span{
-            font-weight: 900;
-            font-size: xx-large;
-            color: darkblue;
-        }
+      #old p span {
+        font-weight: 900;
+        font-size: xx-large;
+        color: darkblue;
+      }
+      #nd span {
+        color: red;
+      }
     </style>
-
-
   </head>
   <body>
     <h1>Query selector all</h1>
@@ -23,14 +24,17 @@
         Lorem ipsum dolor sit amet consectetur
         <span>adipisicing elit. Voluptatibus doloremque</span> ipsa quibusdam
         magni provident beatae molestias sint enim non repellat eaque reiciendis
-        amet <span>expedita commodi iusto consectetur illo, corporis</span> recusandae.
+        amet
+        <span>expedita commodi iusto consectetur illo, corporis</span>
+        recusandae.
       </p>
 
-      <h1>
+      <h1 id="nd">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil
         tempore est corrupti saepe sapiente quos a
         <span
-          >dolore neque facere placeat laborum cupiditate tempora molestias
+          >dolore neque
+          <span>facere placeat laborum cupiditate tempora</span> molestias
           corporis inventore enim</span
         >
         , similique facilis!
@@ -39,14 +43,26 @@
 
     <script>
       const query = document.querySelectorAll("#old p span");
-    //   console.log(query);
-    for(let show of query){
+      //   console.log(query);
+      for (let show of query) {
         console.log(show.innerText);
-        
-    }
+      }
+      query.style.color = "red";
+
+      const secondQuery = document.querySelectorAll("#nd span");
+      //   console.log(secondQuery);
+      for (let show2 of secondQuery) {
+        console.log(show2);
+      }
+
+    //   const color = document.getElementById("nd");
+    //   color.style.backgroundColor = "blue";
+    //   console.log(color);
       
-      
-      
+
+      // for(ler show2 of secondQuery){
+      // console.log(show2)
+      // }
     </script>
   </body>
 </html>
