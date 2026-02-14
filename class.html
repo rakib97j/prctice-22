@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element BY Class name </title>
+</head>
+<body>
+    <h1>GET ELEMENT BY CLASS NAME </h1>
+
+
+    <ul>
+        <li class="First-op">NUMber ====> 1</li>
+        <li>NUMber ====> 2</li>
+        <li class="First-op">NUMber ====> 3</li>
+        <li>NUMber ====> 4</li>
+        <li class="First-op">NUMber ====> 5</li>
+        <li>NUMber ====> 6</li>
+        <li class="First-op">NUMber ====> 7</li>
+    </ul>
+
+    <script>
+        const importentNumber =document.getElementsByClassName('First-op')
+        console.log(importentNumber);
+
+
+        for( let find of importentNumber){
+            console.log(find.innerText);
+        }
+        
+    </script>
+
+
+</body>
+</html>
