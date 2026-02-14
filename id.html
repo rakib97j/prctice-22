@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetElementById</title>
+  </head>
+  <body>
+    <h1 id="first-name">Rakib hassan</h1>
+    <h1 id="">sakib hassan</h1>
+    <h1 id="">Rofik hassan</h1>
+    <h1 id="">Sofik hassan</h1>
+    <h1 id="">asad0 hassan</h1>
+
+    <ul>
+      <li>aho</li>
+      <li>boho</li>
+      <li>daraw</li>
+      <li>daw</li>
+      <li>naw</li>
+      <li>jaw</li>
+    </ul>
+
+    <script>
+      let findById = document.getElementById("first-name");
+    //   console.log(findById.innerText);
+      findById.innerText = 'RAKIBUL HASSAN RAKIB'
+      
+
+      let ul = document.getElementsByTagName("li");
+    //   console.log(ul);
+    for(let show of ul){
+        console.log(show.innerText);
+    }
+      
+    </script>
+  </body>
+</html>
