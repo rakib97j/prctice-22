@@ -13,8 +13,6 @@ for (let show of find) {
   show.style.fontWidth="700"
   show.style.border="50px solid green"
   show.style.textAlign="right "
-  
-
 
 }
 
